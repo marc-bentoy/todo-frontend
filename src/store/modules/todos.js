@@ -31,7 +31,7 @@ const actions = {
     async filterTodos({ commit }, event) {
         const limit = parseInt(event.target.options[event.target.options.selectedIndex].innerText)
         const response = await axios.get(api_url + `?_limit=${limit}`)
-        commit('setTodos', response.data)
+        commit('capTodos', response.data)
     },
     async updateTodo({ commit }, updatedTodo) {
         const response = await axios.put(api_url + `/${updatedTodo.id}`, updatedTodo)
@@ -41,6 +41,7 @@ const actions = {
 
 const mutations = {
     setTodos: (state, todos) => (state.todos = todos),
+    capTodos: (state, todos) => (state.todos = todos),
     newTodo: (state, todo) => (state.todos.unshift(todo)),
     removeTodo: (state, id) => (state.todos = state.todos.filter(todo => todo.id !== id)),
     setUpdatedTodo: (state, updatedTodo) => {

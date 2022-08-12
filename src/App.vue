@@ -2,9 +2,6 @@
   <div id="app">
     <div class="container">
       <h1>Todos Manager</h1>
-      <h6>
-        Powered by: Vue 3 | Vuex 4 | Axio | Ruby on Rails 6 | SQLite3
-      </h6>
       <AddTodo/>
       <FilterTodos/>
       <Todos/>

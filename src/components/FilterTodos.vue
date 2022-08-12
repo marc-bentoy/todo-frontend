@@ -12,9 +12,10 @@
 
 <script>
 import { mapActions } from 'vuex'
+
 export default {
     name: "FilterTodos",
-    methods: mapActions(['filterTodos'])
+    methods: mapActions(["filterTodos"])
 }
 </script>
 

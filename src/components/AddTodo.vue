@@ -3,7 +3,7 @@
         <h3>Add Todo</h3>
         <div class="add">
             <form @submit="onSubmit">
-                <input type="text" v-model="title" placeholder="add todo..."> 
+                <input type="text" v-model="title" placeholder="add todo..." required> 
                 <input type="submit" value="Add todo">
             </form>
         </div>
