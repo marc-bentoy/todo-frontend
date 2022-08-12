@@ -1,16 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <div class="container">
+      <h1>Todos Manager</h1>
+      <h6>
+        Powered by: Vue 3 | Vuex 4 | Axio | Ruby on Rails 6 | SQLite3
+      </h6>
+      <AddTodo/>
+      <FilterTodos/>
+      <Todos/>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Todos from "@/components/Todos.vue"
+import AddTodo from "@/components/AddTodo.vue"
+import FilterTodos from "@/components/FilterTodos.vue"
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
+    Todos,
+    AddTodo,
+    FilterTodos
+}
 }
 </script>
 
