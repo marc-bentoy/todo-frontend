@@ -4,7 +4,7 @@
         <div class="add">
             <form @submit="onSubmit">
                 <input type="text" v-model="title" placeholder="add todo..." required> 
-                <input type="submit" value="Add todo">
+                <input type="submit" value="Add">
             </form>
         </div>
     </div>    
