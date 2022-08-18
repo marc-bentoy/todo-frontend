@@ -5,6 +5,7 @@
       <AddTodo/>
       <FilterTodos/>
       <Todos/>
+      <Todos/>
     </div>
   </div>
 </template>
