@@ -14,7 +14,7 @@
             <div 
             v-for="todo in allTodos" 
             :key="todo.id" 
-            @dblclick="onDoubleClick(todo)" 
+            @click="onDoubleClick(todo)" 
             class="todo" 
             v-bind:class="{'is-complete':todo.completed}">
                 {{ todo.title }}
